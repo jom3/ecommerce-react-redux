@@ -14,14 +14,14 @@ export const ProductCardPage = () => {
     <div className="w-full flex justify-center px-20 py-10">
       {
         data && <div className="w-96 md:w-[700px] p-10 flex flex-col gap-4 items-center border-4 border-double rounded-xl border-[#808080]">
-        <h1 className="text-4xl uppercase text-center">{data.title}</h1>
+        <h1 className="text-4xl uppercase text-center">{data['title']}</h1>
         <hr className="w-full" />
-        <img src={data.image} alt={data.title} className="w-full rounded-2xl" />
+        <img src={data['image']} alt={data['title']} className="w-full rounded-2xl" />
         <hr />
         <div className="w-full flex flex-row justify-between items-center">
-          <p>{`${data.price} $`}</p>
+          <p>{`${data['price']} $`}</p>
           <div className="flex flex-row items-center">
-            <p>{data.rating.rate}</p>
+            <p>{data['rating']['rate']}</p>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 24 24"
@@ -36,7 +36,7 @@ export const ProductCardPage = () => {
             </svg>
           </div>
         </div>
-        <p className="font-semibold">{data.description}</p>
+        <p className="font-semibold">{data['description']}</p>
         <div className="flex flex-row gap-20">
         <button className="bg-red-500 text-[#2d2d2d] p-2 rounded-lg font-bold transition-all duration-300 hover:bg-red-400 hover:text-[#3c3c3b]" onClick={()=>goBack()}>Go back</button>
         <AddCardButton product={data}/>
