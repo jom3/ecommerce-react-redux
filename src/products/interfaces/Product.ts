@@ -7,7 +7,6 @@ export interface Product {
   image:       string;
   rating:      Rating;
   qty:         number;
-  subTotal:       number;
 }
 
 interface Rating {
