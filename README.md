@@ -1,30 +1,42 @@
-# React + TypeScript + Vite
+# Ecommerce + cart + state management 
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This application is working with:
+- React
+- Redux
+- TailwindCss
+- React-router
+  
+The API that I used for this app is:
 
-Currently, two official plugins are available:
+`https://fakestoreapi.com/`
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+***note: This api doesn't use an api key***
 
-## Expanding the ESLint configuration
+## Description
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+This application was made for practicing react and redux for state management, It does a lot of things like:
 
-- Configure the top-level `parserOptions` property like this:
+  - Show products
+  - Show a unique product
+  - Add, remove and removeAll from the cart
+  - Toast for personal message when something happen 
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+## How it works?
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+There are many steps to run this app, please follow step by step:
+
+  - Clone the project from
+
+    `https://github.com/jom3/ecommerce-react-redux.git`
+  
+  - Use the Command Prompt of operating system
+  - Run the command `npm install`
+  - Run the command `npm run dev`
+
+These are all the steps that you need to run it
+
+## DEMO
+
+`https://ecommerce-react-redux-beta.vercel.app/`
+
+Thanks and Enjoy!
